@@ -1,19 +1,20 @@
-body
-{
-	background-color: #232323;
+body {
+    background-color: #232323;
 }
 
-.container
-{
-	margin:1px 30%;
-	width:40%;
+h1 {
+    color: white;
+    text-align: center;
 }
 
-.square
-{
-	width: 30%;
-	height: 180px;
-	background-color: white;
-	margin: 1.66%;
-	float :left;
+.square {
+    width: 30%;
+    height: 180px;
+    margin: 1.66%;
+    float: left;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0px auto;
 }
