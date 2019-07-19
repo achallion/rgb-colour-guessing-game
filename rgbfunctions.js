@@ -37,6 +37,7 @@ $(function()
                     message.text("Correct!");
                     alreadywon = true;
                     $("h1").css("background-color",correctcolour);
+                    $("#reset").text("PLAY AGAIN ?")
                 }
                 else
                 {
@@ -53,5 +54,17 @@ $(function()
     window.colourall = function()
     {
         $(".square").css("background-color",correctcolour);
+    }
+
+    window.resetall = function()
+    {
+        $("#reset").text("NEW COLOURS");
+        alreadywon = false;
+        colours = randomizecolours(num);
+        correctcolour = colours[Math.floor(Math.random() * num)];
+        setcolourname();
+        setcolours();
+        $("h1").css("background-color","#232323");
+        $("#message").text("Try Again")
     }
 })
