@@ -1,7 +1,8 @@
 body 
 {
     background-color: #232323;
-    margin : 0px 0px;
+    margin : 0px;
+    font-family: "Montserrat" , "Avenir";
 }
 
 h1 
@@ -9,12 +10,35 @@ h1
     color: white;
     text-align: center;
     margin: 0px auto;
+    background-color: steelblue;
+    font-weight: normal !important;
+    line-height:1.1%;
+    padding: 5%;
 }
 
 div:nth-of-type(1)
 {
     background-color: white;
     color: black;
+    text-align: center;
+}
+
+button
+{
+    border: none;
+    background-color: white;
+    height: 100%;
+    color: steelblue;
+    font-weight: 700;
+    font-size: inherit;
+    letter-spacing: 1px;
+    transition: all 0.7s;
+}
+
+button:hover
+{
+    color:white;
+    background-color: steelblue;
 }
 
 .square 
@@ -23,20 +47,37 @@ div:nth-of-type(1)
     height: 180px;
     margin: 1.66%;
     float: left;
+    border-radius: 15%;
+    transition: background-color 0.3s;
 }
 
 .selected
 {
-    background-color: blue;
+    background-color: steelblue;
+    color: white;
 }
 
 .container 
 {
     max-width: 600px;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 #color
 {
     text-transform: uppercase;
+    font-size: 150%;
+}
+
+#stripe
+{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#message
+{
+    display:inline-block;
+    width: 20%;
 }

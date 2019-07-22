@@ -63,7 +63,7 @@ $(function()
         correctcolour = colours[Math.floor(Math.random() * num)];
         setcolourname();
         setcolours();
-        $("h1").css("background-color","#232323");
+        $("h1").css("background-color","steelblue");
         $("#message").text("");
     }
 
