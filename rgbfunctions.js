@@ -21,8 +21,7 @@ $(function()
 
     window.setcolours = function()
     {
-        let n = $(".square").length;
-        for (let i = 0; i < n; i++) 
+        for (let i = 0; i < num; i++) 
         {
             let asquare = $(`.square:nth-of-type(${i + 1})`);
             asquare.css("background-color", colours[i]);
@@ -65,6 +64,30 @@ $(function()
         setcolourname();
         setcolours();
         $("h1").css("background-color","#232323");
-        $("#message").text("Try Again")
+        $("#message").text("");
+    }
+
+    window.makeeasy = ()=>
+    {
+        num = 3;
+        $("button:nth-of-type(2)").addClass("selected");
+        $("button:nth-of-type(3)").removeClass();
+        for(let i = 3; i < 6; i++)
+        {
+            $(`.square:nth-of-type(${i + 1})`).css("display","none");
+        }
+        resetall();
+    }
+
+    window.makehard = ()=>
+    {
+        num = 6;
+        $("button:nth-of-type(3)").addClass("selected");
+        $("button:nth-of-type(2)").removeClass();
+        for(let i = 3; i < 6; i++)
+        {
+            $(`.square:nth-of-type(${i + 1})`).css("display","block");
+        }
+        resetall();
     }
 })

@@ -7,6 +7,8 @@ $(function()
         setcolourname();
         setcolours();
         $("#reset").click(resetall);
+        $("button:nth-of-type(2)").click(makeeasy);
+        $("button:nth-of-type(3)").click(makehard);
     }
 
     main();
